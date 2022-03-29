@@ -6,7 +6,7 @@
 
 int main(){
     int n = 0;
-    scanf("%d",n);
+    scanf("%d",&n);
     pid_t pid;
     pid = fork();
     if(pid < 0){
@@ -20,7 +20,7 @@ int main(){
                 n = n/2;
             }
             else{
-                n = 3*n + 1
+                n = 3*n + 1;
             }
             printf(",%d",n);
         }

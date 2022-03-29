@@ -11,9 +11,9 @@
 
 int main(){
     int n = 0;
-    scanf("%d",n);
+    scanf("%d",&n);
     int shm_fd;
-    void* str;
+    void* ptr;
     const char* name = "hw1-3";
     const int SIZE = 4096;
     shm_fd = shm_open(name,O_CREAT|O_RDWR,0666);
@@ -35,7 +35,7 @@ int main(){
                 n = n/2;
             }
             else{
-                n = 3*n + 1
+                n = 3*n + 1;
             }
             char nStr[SIZE];
             sprintf(ptr,",");
